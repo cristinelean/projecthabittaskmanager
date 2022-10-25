@@ -36,8 +36,8 @@
             android:layout_width="325dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="43dp"
-            android:layout_marginTop="100dp"
-            android:layout_marginBottom="1dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="10dp"
             android:fontFamily="@font/mont"
             android:gravity="center"
             android:shadowDx="1"
@@ -46,6 +46,82 @@
             android:text="00:00"
             android:textColor="@color/paleBlack"
             android:textSize="100sp" />
+
+        <android.widget.Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button6"
+            android:fontFamily="@font/arisb"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="Start"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <android.widget.Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="222dp"
+            android:layout_marginTop="-68dp"
+            android:background="@drawable/button6"
+            android:fontFamily="@font/arisb"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="Reset"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <android.widget.Button
+            android:id="@+id/btnSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/button6"
+            android:fontFamily="@font/arisb"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="Set"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <android.widget.Button
+            android:id="@+id/btnBack"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button5"
+            android:fontFamily="@font/arisb"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
 
     </LinearLayout>
 </RelativeLayout>
