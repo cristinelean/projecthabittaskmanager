@@ -8,11 +8,20 @@
         <entry key="..\:/Users/unagi/AndroidStudioProjects/ui/app/src/main/res/drawable/button3.xml" value="0.1875" />
         <entry key="..\:/Users/unagi/AndroidStudioProjects/ui/app/src/main/res/drawable/button4.xml" value="0.1875" />
         <entry key="..\:/Users/unagi/AndroidStudioProjects/ui/app/src/main/res/drawable/button5.xml" value="0.1875" />
+        <entry key="..\:/Users/unagi/AndroidStudioProjects/ui/app/src/main/res/drawable/button6.xml" value="0.2295" />
+        <entry key="..\:/Users/unagi/AndroidStudioProjects/ui/app/src/main/res/drawable/frame.xml" value="0.2285" />
+        <entry key="..\:/Users/unagi/AndroidStudioProjects/ui/app/src/main/res/layout/activity_aboutus.xml" value="0.2" />
         <entry key="..\:/Users/unagi/AndroidStudioProjects/ui/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/unagi/AndroidStudioProjects/ui/app/src/main/res/layout/activity_main2.xml" value="0.22291666666666668" />
+        <entry key="..\:/Users/unagi/AndroidStudioProjects/ui/app/src/main/res/layout/activity_notes.xml" value="0.221875" />
         <entry key="..\:/Users/unagi/AndroidStudioProjects/ui/app/src/main/res/layout/activity_notesempty.xml" value="0.21979166666666666" />
+        <entry key="..\:/Users/unagi/AndroidStudioProjects/ui/app/src/main/res/layout/activity_planner.xml" value="0.221875" />
         <entry key="..\:/Users/unagi/AndroidStudioProjects/ui/app/src/main/res/layout/activity_splash.xml" value="0.264" />
+        <entry key="..\:/Users/unagi/AndroidStudioProjects/ui/app/src/main/res/layout/activity_task.xml" value="0.18205128205128204" />
         <entry key="..\:/Users/unagi/AndroidStudioProjects/ui/app/src/main/res/layout/activity_tasksempty.xml" value="0.21979166666666666" />
         <entry key="..\:/Users/unagi/AndroidStudioProjects/ui/app/src/main/res/layout/activity_timer.xml" value="0.21979166666666666" />
+        <entry key="..\:/Users/unagi/AndroidStudioProjects/ui/app/src/main/res/layout/activity_timer2.xml" value="0.1829059829059829" />
+        <entry key="..\:/Users/unagi/AndroidStudioProjects/ui/app/src/main/res/layout/activity_tips.xml" value="0.2" />
         <entry key="..\:/Users/unagi/AndroidStudioProjects/ui/app/src/main/res/layout/splashscreen.xml" value="0.109375" />
         <entry key="..\:/Users/unagi/AndroidStudioProjects/ui/app/src/main/res/layout/toolbar.xml" value="0.1" />
       </map>

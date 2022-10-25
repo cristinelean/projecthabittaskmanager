@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateTask">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="50sp"
+        android:layout_marginTop="70dp"
+        android:text="Task"
+        />
+
+    <TextView
+        android:id="@+id/crntdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:hint="Date"/>
+
+    <EditText
+        android:id="@+id/task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/crntdate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:textSize="30sp"
+        android:maxLength="20"
+        android:hint="Enter Task"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/task"
+        android:hint="Pick a time"
+        android:textSize="30sp" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_below="@+id/task"
+        android:layout_toEndOf="@id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Set time" />
+
+    <Button
+        android:id="@+id/stask"
+        android:onClick="saveTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="322dp"
+        android:text="Save" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btt"
+        android:layout_below="@id/stask"
+        android:layout_centerHorizontal="true"
+        android:text="Back"
+        />
+
+</RelativeLayout>

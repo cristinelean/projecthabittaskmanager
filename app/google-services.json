@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "267575155645",
+    "project_id": "habit-3089c",
+    "storage_bucket": "habit-3089c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267575155645:android:a35b40edaea07bbce6d0d4",
+        "android_client_info": {
+          "package_name": "com.bugay.ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267575155645-dodrrcke63ogaktvks69ru1hl387ff0n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bugay.ui",
+            "certificate_hash": "ec97def855c33dfa528b7f575d4046fbfa868eae"
+          }
+        },
+        {
+          "client_id": "267575155645-q3ka192glesu1ri0ek2lvik6j1f771g2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA76wBduMI0AawLGt1CdqedjHKIzwbaAAY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267575155645-q3ka192glesu1ri0ek2lvik6j1f771g2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
