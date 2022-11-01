@@ -59,7 +59,7 @@ public class calendarActivtiy extends AppCompatActivity {
         btc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(calendarActivtiy.this, MainActivity.class);
+                Intent i = new Intent(calendarActivtiy.this, PlannerActivtiy.class);
                 startActivity(i);
             }
         });
