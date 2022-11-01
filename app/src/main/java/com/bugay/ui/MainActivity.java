@@ -28,6 +28,13 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(null);
 
+        bNotes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, NotesActivity.class);
+                startActivity(intent);
+            }
+        });
         bPlanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
