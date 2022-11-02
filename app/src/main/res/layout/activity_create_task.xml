@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateTask">
+
+    <TextView
+        android:id="@+id/myTask"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="1dp"
+        android:fontFamily="@font/mont"
+        android:gravity="center"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="My Tasks"
+        android:textColor="@color/title"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_below="@id/myTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mont"
+        android:gravity="center"
+        android:text="mm-dd-yy"
+        android:textColor="#545454"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Etask"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_below="@id/date"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/arisb"
+        android:textSize="25sp"
+        android:hint="Enter Task"/>
+
+    <EditText
+        android:id="@+id/pkatime"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_below="@id/Etask"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/arisb"
+        android:textSize="25sp"
+        android:hint="Pick a time"/>
+
+    <android.widget.Button
+        android:id="@+id/settme"
+        android:layout_toEndOf="@id/pkatime"
+        android:layout_below="@id/Etask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button5"
+        android:fontFamily="@font/arisb"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="Set Time"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+    <android.widget.Button
+        android:id="@+id/btnSaveTask"
+        android:layout_below="@id/pkatime"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="205dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button5"
+        android:fontFamily="@font/arisb"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <android.widget.Button
+        android:id="@+id/btnBack"
+        android:layout_below="@id/btnSaveTask"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button5"
+        android:fontFamily="@font/arisb"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+</RelativeLayout>

@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".NotesActivity">
 
     <include
         layout="@layout/toolbar"
@@ -31,12 +32,31 @@
             android:textColor="@color/title"
             android:textSize="40sp" />
 
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="239dp"
+            android:layout_height="238dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/flag" />
+
+        <TextView
+            android:id="@+id/noNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arisb"
+            android:gravity="center"
+            android:text="No Notes"
+            android:textColor="#545454"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
         <android.widget.Button
-            android:id="@+id/btnSave"
+            android:id="@+id/btnAddNote"
             android:layout_width="315dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="48dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="65dp"
             android:layout_marginEnd="40dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/button5"
@@ -46,7 +66,7 @@
             android:shadowDx="1"
             android:shadowDy="1"
             android:shadowRadius="2"
-            android:text="Save"
+            android:text="Add Note"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="25sp" />

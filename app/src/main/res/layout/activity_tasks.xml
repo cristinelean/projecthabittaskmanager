@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".TaskActivity">
 
     <include
         layout="@layout/toolbar"
@@ -16,7 +17,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/timer"
+            android:id="@+id/myTask"
             android:layout_width="325dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="43dp"
@@ -27,78 +28,57 @@
             android:shadowDx="1"
             android:shadowDy="1"
             android:shadowRadius="2"
-            android:text="Timer"
+            android:text="My Tasks"
             android:textColor="@color/title"
             android:textSize="40sp" />
 
         <TextView
-            android:id="@+id/Timer"
-            android:layout_width="325dp"
+            android:id="@+id/date"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="43dp"
-            android:layout_marginTop="55dp"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/mont"
             android:gravity="center"
-            android:shadowDx="1"
-            android:shadowDy="1"
-            android:shadowRadius="2"
-            android:text="00:00"
-            android:textColor="@color/paleBlack"
-            android:textSize="100sp" />
+            android:fontFamily="@font/mont"
+            android:text="mm-dd-yy"
+            android:textColor="#545454"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <!--android:fontFamily="@font/arisb" d lumalabas ng maayus-->
+
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="239dp"
+            android:layout_height="238dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/flag" />
+
+        <TextView
+            android:id="@+id/noTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arisb"
+            android:gravity="center"
+            android:text="No Tasks"
+            android:textColor="#545454"
+            android:textSize="35sp"
+            android:textStyle="bold" />
 
         <android.widget.Button
-            android:id="@+id/btnPause"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnAddTask"
+            android:layout_width="315dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="65dp"
             android:layout_marginEnd="40dp"
             android:layout_marginBottom="20dp"
-            android:background="@drawable/button6"
+            android:background="@drawable/button5"
             android:fontFamily="@font/arisb"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:shadowDx="1"
             android:shadowDy="1"
             android:shadowRadius="2"
-            android:text="Pause"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="25sp" />
-
-        <android.widget.Button
-            android:id="@+id/btnReset"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="222dp"
-            android:layout_marginTop="-68dp"
-            android:background="@drawable/button6"
-            android:fontFamily="@font/arisb"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:shadowDx="1"
-            android:shadowDy="1"
-            android:shadowRadius="2"
-            android:text="Reset"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="25sp" />
-
-        <android.widget.Button
-            android:id="@+id/btnSet"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="100dp"
-            android:background="@drawable/button6"
-            android:fontFamily="@font/arisb"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:shadowDx="1"
-            android:shadowDy="1"
-            android:shadowRadius="2"
-            android:text="Set"
+            android:text="Add Task"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="25sp" />
@@ -108,7 +88,7 @@
             android:layout_width="315dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="48dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="-10dp"
             android:layout_marginEnd="40dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/button5"
