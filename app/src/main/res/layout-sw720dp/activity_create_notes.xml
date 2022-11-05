@@ -35,7 +35,7 @@
                     android:text="Notes"
                     android:letterSpacing=".1"
                     android:textColor="@color/title"
-                    android:textSize="40sp" />
+                    android:textSize="80sp" />
 
                 <EditText
                     android:id="@+id/Etitle"
@@ -66,7 +66,7 @@
                         android:id="@+id/btnSaveTask"
                         android:layout_width="745dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="500dp"
+                        android:layout_marginTop="400dp"
                         android:layout_gravity="center"
                         android:background="@drawable/button5"
                         android:fontFamily="@font/arisb"
@@ -77,7 +77,7 @@
                         android:letterSpacing=".1"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
-                        android:textSize="32sp"/>
+                        android:textSize="65sp"/>
 
                     <android.widget.Button
                         android:id="@+id/btnBack"
@@ -96,7 +96,7 @@
                         android:letterSpacing=".1"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
-                        android:textSize="32sp"/>
+                        android:textSize="65sp"/>
             </LinearLayout>
         </ScrollView>
 </RelativeLayout>
