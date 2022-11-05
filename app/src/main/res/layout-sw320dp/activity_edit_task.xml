@@ -63,7 +63,7 @@
 
             <EditText
                 android:id="@+id/Etask"
-                android:layout_width="345dp"
+                android:layout_width="545dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/date"
                 android:layout_centerHorizontal="true"
@@ -80,7 +80,7 @@
 
             <TextView
                 android:id="@+id/pkatime"
-                android:layout_width="250dp"
+                android:layout_width="450dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/Etask"
                 android:layout_centerHorizontal="true"
@@ -97,7 +97,7 @@
 
             <FrameLayout
                 android:id="@+id/frameLayout"
-                android:layout_width="250dp"
+                android:layout_width="450dp"
                 android:layout_height="1dp"
                 android:layout_below="@id/pkatime"
                 android:background="@color/black"
@@ -132,10 +132,10 @@
 
             <android.widget.Button
                 android:id="@+id/btnSaveTask"
-                android:layout_width="315dp"
+                android:layout_width="545dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/pkatime"
-                android:layout_marginTop="300dp"
+                android:layout_marginTop="250dp"
                 android:background="@drawable/button5"
                 android:fontFamily="@font/arisb"
                 android:shadowDx="1"
@@ -154,7 +154,7 @@
 
             <android.widget.Button
                 android:id="@+id/btnBack"
-                android:layout_width="315dp"
+                android:layout_width="545dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/btnSaveTask"
                 android:layout_marginTop="20dp"

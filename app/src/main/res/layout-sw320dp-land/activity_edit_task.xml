@@ -27,7 +27,7 @@
                 android:id="@+id/myTask"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="132dp"
+                android:layout_marginTop="102dp"
                 android:fontFamily="@font/mont"
                 android:gravity="center"
                 android:shadowDx="1"
@@ -67,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/date"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="70dp"
                 android:autofillHints="Enter Task"
                 android:fontFamily="@font/arisb"
                 android:hint="Enter Task"
@@ -128,14 +128,14 @@
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="@+id/Etask"
                 app:layout_constraintTop_toBottomOf="@+id/Etask"
-                app:layout_constraintVertical_bias="0.078" />
+                app:layout_constraintVertical_bias="0.151" />
 
             <android.widget.Button
                 android:id="@+id/btnSaveTask"
                 android:layout_width="315dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/pkatime"
-                android:layout_marginTop="300dp"
+                android:layout_marginTop="100dp"
                 android:background="@drawable/button5"
                 android:fontFamily="@font/arisb"
                 android:shadowDx="1"

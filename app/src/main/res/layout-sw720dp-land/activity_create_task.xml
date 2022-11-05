@@ -12,13 +12,9 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -34,14 +30,9 @@
                 android:shadowDy="1"
                 android:shadowRadius="2"
                 android:text="My Tasks"
+                android:letterSpacing=".1"
                 android:textColor="@color/title"
-                android:textSize="40sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+                android:textSize="45sp" />
 
             <TextView
                 android:id="@+id/date"
@@ -51,68 +42,49 @@
                 android:fontFamily="@font/mont"
                 android:gravity="center"
                 android:text="mm-dd-yy"
+                android:letterSpacing=".1"
                 android:textColor="#545454"
-                android:textSize="25dp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/myTask"
-                app:layout_constraintVertical_bias="0.0" />
+                android:textSize="30dp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/Etask"
-                android:layout_width="345dp"
+                android:layout_width="945dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/date"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="120dp"
                 android:autofillHints="Enter Task"
                 android:fontFamily="@font/arisb"
                 android:hint="Enter Task"
-                android:textSize="25sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/date"
-                app:layout_constraintStart_toStartOf="@+id/date"
-                app:layout_constraintTop_toBottomOf="@+id/date"
-                app:layout_constraintVertical_bias="0.0" />
+                android:textSize="35sp" />
 
             <TextView
                 android:id="@+id/pkatime"
-                android:layout_width="250dp"
+                android:layout_width="790dp"
+                android:layout_marginStart="160dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/Etask"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="70dp"
                 android:fontFamily="@font/arisb"
                 android:hint="Pick a time"
-                android:textSize="25sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/Etask"
-                app:layout_constraintHorizontal_bias="0.031"
-                app:layout_constraintStart_toStartOf="@+id/Etask"
-                app:layout_constraintTop_toBottomOf="@+id/Etask"
-                app:layout_constraintVertical_bias="0.006" />
+                android:textSize="35sp"/>
 
             <FrameLayout
                 android:id="@+id/frameLayout"
-                android:layout_width="250dp"
+                android:layout_width="570dp"
+                android:layout_marginStart="480dp"
                 android:layout_height="1dp"
                 android:layout_below="@id/pkatime"
-                android:background="@color/black"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/Etask"
-                app:layout_constraintHorizontal_bias="0.031"
-                app:layout_constraintStart_toStartOf="@+id/Etask"
-                app:layout_constraintTop_toBottomOf="@+id/pkatime"
-                app:layout_constraintVertical_bias="0.0" />
+                android:background="@color/black" />
 
             <android.widget.Button
                 android:id="@+id/settme"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@id/pkatime"
+                android:layout_below="@id/Etask"
+                android:layout_marginTop="70dp"
                 android:background="@drawable/button5"
                 android:fontFamily="@font/arisb"
                 android:paddingLeft="20dp"
@@ -121,59 +93,45 @@
                 android:shadowDy="1"
                 android:shadowRadius="2"
                 android:text="Set Time"
+                android:textSize="35sp"
                 android:textAllCaps="false"
-                android:textColor="@color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/Etask"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="@+id/Etask"
-                app:layout_constraintTop_toBottomOf="@+id/Etask"
-                app:layout_constraintVertical_bias="0.078" />
+                android:textColor="@color/white" />
 
             <android.widget.Button
                 android:id="@+id/btnSaveTask"
-                android:layout_width="315dp"
+                android:layout_width="945dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/pkatime"
-                android:layout_marginTop="300dp"
+                android:layout_marginTop="150dp"
                 android:background="@drawable/button5"
                 android:fontFamily="@font/arisb"
+                android:layout_centerHorizontal="true"
                 android:shadowDx="1"
                 android:shadowDy="1"
                 android:shadowRadius="2"
                 android:text="Save"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="25sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/settme"
-                app:layout_constraintHorizontal_bias="0.443"
-                app:layout_constraintStart_toStartOf="@+id/pkatime"
-                app:layout_constraintTop_toBottomOf="@+id/pkatime"
-                app:layout_constraintVertical_bias="0.0" />
+                android:textSize="35sp" />
 
             <android.widget.Button
                 android:id="@+id/btnBack"
-                android:layout_width="315dp"
+                android:layout_width="945dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/btnSaveTask"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/button5"
                 android:fontFamily="@font/arisb"
+                android:layout_centerHorizontal="true"
                 android:shadowDx="1"
                 android:shadowDy="1"
                 android:shadowRadius="2"
                 android:text="Back"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="25sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/btnSaveTask"
-                app:layout_constraintStart_toStartOf="@+id/btnSaveTask"
-                app:layout_constraintTop_toBottomOf="@+id/btnSaveTask"
-                app:layout_constraintVertical_bias="0.0" />
+                android:textSize="35sp" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
     </ScrollView>
 </RelativeLayout>

@@ -13,11 +13,7 @@
         <ScrollView
             android:id="@+id/scroll"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -29,88 +25,78 @@
                     android:layout_width="325dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="100dp"
+                    android:layout_marginTop="160dp"
                     android:layout_marginBottom="1dp"
                     android:fontFamily="@font/mont"
                     android:gravity="center"
                     android:shadowDx="1"
                     android:shadowDy="1"
                     android:shadowRadius="2"
-                    android:text="My Notes"
+                    android:text="Notes"
+                    android:letterSpacing=".1"
                     android:textColor="@color/title"
                     android:textSize="40sp" />
 
                 <EditText
                     android:id="@+id/Etitle"
-                    android:layout_width="345dp"
+                    android:layout_width="745dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/myTask"
                     android:layout_gravity="center"
                     android:layout_marginTop="50dp"
                     android:fontFamily="@font/arisb"
                     android:hint="Enter Title"
-                    android:textSize="25sp" />
+                    android:letterSpacing=".1"
+                    android:textSize="32sp" />
 
                 <EditText
                     android:id="@+id/dec"
-                    android:layout_width="345dp"
-                    android:layout_height="200dp"
+                    android:layout_width="745dp"
+                    android:layout_height="278dp"
                     android:layout_below="@id/Etitle"
                     android:layout_gravity="center"
-
                     android:layout_marginTop="30dp"
                     android:fontFamily="@font/arisb"
                     android:gravity="start"
                     android:hint="Pick a time"
-                    android:textSize="25sp" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:letterSpacing=".1"
+                    android:textSize="32sp" />
 
                     <android.widget.Button
                         android:id="@+id/btnSaveTask"
-                        android:layout_width="315dp"
+                        android:layout_width="745dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="150dp"
+                        android:layout_marginTop="500dp"
+                        android:layout_gravity="center"
                         android:background="@drawable/button5"
                         android:fontFamily="@font/arisb"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
                         android:shadowDx="1"
                         android:shadowDy="1"
                         android:shadowRadius="2"
                         android:text="Save"
+                        android:letterSpacing=".1"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
-                        android:textSize="25sp"
-                        app:layout_constraintBottom_toTopOf="@+id/btnBack"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        android:textSize="32sp"/>
 
                     <android.widget.Button
                         android:id="@+id/btnBack"
-                        android:layout_width="315dp"
+                        android:layout_width="745dp"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/btnSaveTask"
                         android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="center"
                         android:background="@drawable/button5"
                         android:fontFamily="@font/arisb"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
                         android:shadowDx="1"
                         android:shadowDy="1"
                         android:shadowRadius="2"
                         android:text="Back"
+                        android:letterSpacing=".1"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
-                        android:textSize="25sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="@+id/btnSaveTask"
-                        app:layout_constraintStart_toStartOf="@+id/btnSaveTask"
-                        app:layout_constraintTop_toBottomOf="@+id/btnSaveTask" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                        android:textSize="32sp"/>
             </LinearLayout>
         </ScrollView>
 </RelativeLayout>

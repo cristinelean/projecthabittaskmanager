@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TipsActivity">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tips"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="-10dp"
+                android:fontFamily="@font/mont"
+                android:gravity="center"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="Tips"
+                android:textColor="@color/title"
+                android:textSize="50sp" />
+
+            <FrameLayout
+                android:layout_width="699dp"
+                android:layout_height="105dp"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/frame"
+                android:padding="25dp">
+
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="96dp"
+                    android:layout_marginTop="-10dp"
+                    android:src="@drawable/tips1" />
+
+                <TextView
+                    android:id="@+id/textTips1"
+                    android:layout_width="509dp"
+                    android:layout_height="74dp"
+                    android:layout_marginStart="145dp"
+                    android:layout_marginBottom="9dp"
+                    android:fontFamily="@font/arisb"
+                    android:gravity="center"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text="Reward yourself on every task you finish in order to be continuously motivated."
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="699dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/frame"
+                android:padding="25dp">
+
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="96dp"
+                    android:layout_marginTop="-10dp"
+                    android:src="@drawable/tips2" />
+
+                <TextView
+                    android:id="@+id/textTips2"
+                    android:layout_width="507dp"
+                    android:layout_height="74dp"
+                    android:layout_marginStart="145dp"
+                    android:layout_marginBottom="9dp"
+                    android:fontFamily="@font/arisb"
+                    android:gravity="center"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text="Don't forget to take a break. Your body also needs rest to think properly."
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="699dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/frame"
+                android:padding="25dp">
+
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="96dp"
+                    android:layout_marginTop="-10dp"
+                    android:src="@drawable/tips3" />
+
+                <TextView
+                    android:id="@+id/textTips3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="74dp"
+                    android:layout_marginStart="145dp"
+                    android:layout_marginBottom="9dp"
+                    android:fontFamily="@font/arisb"
+                    android:gravity="center"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text="Start thinking about your short and long term goals in life."
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="699dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/frame"
+                android:padding="25dp">
+
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="96dp"
+                    android:layout_marginTop="-10dp"
+                    android:src="@drawable/tips4" />
+
+                <TextView
+                    android:id="@+id/textTips4"
+                    android:layout_width="505dp"
+                    android:layout_height="74dp"
+                    android:layout_marginStart="145dp"
+                    android:layout_marginBottom="9dp"
+                    android:fontFamily="@font/arisb"
+                    android:gravity="center"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text="Write your plans you got in mind in order not to forget them."
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </FrameLayout>
+
+            <android.widget.Button
+                android:id="@+id/btnBack"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button5"
+                android:fontFamily="@font/arisb"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="Back"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

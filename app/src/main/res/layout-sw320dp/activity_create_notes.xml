@@ -47,12 +47,12 @@
                     android:fontFamily="@font/arisb"
                     android:hint="Enter Title"
                     android:letterSpacing=".1"
-                    android:textSize="25sp" />
+                    android:textSize="22sp" />
 
                 <EditText
                     android:id="@+id/dec"
                     android:layout_width="345dp"
-                    android:layout_height="400dp"
+                    android:layout_height="278dp"
                     android:layout_below="@id/Etitle"
                     android:layout_gravity="center"
                     android:layout_marginTop="30dp"
@@ -60,7 +60,7 @@
                     android:gravity="start"
                     android:hint="Pick a time"
                     android:letterSpacing=".1"
-                    android:textSize="25sp" />
+                    android:textSize="22sp" />
 
 
 
@@ -79,7 +79,7 @@
                         android:letterSpacing=".1"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
-                        android:textSize="25sp"/>
+                        android:textSize="22sp"/>
 
                     <android.widget.Button
                         android:id="@+id/btnBack"
@@ -98,7 +98,7 @@
                         android:letterSpacing=".1"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
-                        android:textSize="25sp"/>
+                        android:textSize="22sp"/>
             </LinearLayout>
         </ScrollView>
 </RelativeLayout>

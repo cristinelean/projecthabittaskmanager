@@ -71,7 +71,7 @@
 
         <android.widget.Button
             android:id="@+id/btnAddTask"
-            android:layout_width="315dp"
+            android:layout_width="515dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
             android:layout_gravity="center"
@@ -90,7 +90,7 @@
 
         <android.widget.Button
             android:id="@+id/btnBack"
-            android:layout_width="315dp"
+            android:layout_width="515dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="-10dp"

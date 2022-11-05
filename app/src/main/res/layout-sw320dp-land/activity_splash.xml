@@ -7,20 +7,20 @@
 
     <ImageView
         android:id="@+id/splashscreen1"
-        android:layout_width="311dp"
-        android:layout_height="305dp"
+        android:layout_width="211dp"
+        android:layout_height="205dp"
         android:layout_above="@+id/splashscreen2"
         android:layout_alignEnd="@+id/splashscreen2"
         android:src="@drawable/splashscreen1" />
 
     <ImageView
         android:id="@+id/splashscreen2"
-        android:layout_width="311dp"
-        android:layout_height="305dp"
+        android:layout_width="211dp"
+        android:layout_height="155dp"
         android:layout_above="@+id/splashscreen3"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="-100dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginBottom="20dp"
         android:src="@drawable/splashscreen2" />
 
     <TextView

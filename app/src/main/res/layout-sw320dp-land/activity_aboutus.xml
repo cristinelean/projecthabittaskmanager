@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsActivity">
+
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/aboutUs"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="-15dp"
+                android:fontFamily="@font/mont"
+                android:gravity="center"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="About Us"
+                android:textColor="@color/title"
+                android:textSize="50sp" />
+
+            <FrameLayout
+                android:layout_width="692dp"
+                android:layout_height="476dp"
+                android:layout_gravity="center"
+                android:layout_margin="40dp"
+                android:background="@drawable/frame"
+                android:padding="25dp">
+
+                <ImageView
+                    android:layout_width="398dp"
+                    android:layout_height="181dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/aboutuspic" />
+
+                <TextView
+                    android:id="@+id/textStory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="185dp"
+                    android:layout_marginBottom="9dp"
+                    android:fontFamily="@font/arisb"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text="This is our story."
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textStory2"
+                    android:layout_width="585dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginBottom="9dp"
+                    android:fontFamily="@font/arisb"
+                    android:justificationMode="inter_word"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text="Our logo is a dragonfly shaped hourglass which symbolizes change, transformation, adaptability, and self-realization which are considered as the key recipes in order to fulfill our goals."
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textStory3"
+                    android:layout_width="585dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="310dp"
+                    android:layout_marginBottom="9dp"
+                    android:fontFamily="@font/arisb"
+                    android:justificationMode="inter_word"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text="The Habit Task Manager Application aims to help our end users to achieve these through our easy-to-access notes, monthly planner, and timer."
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textStory4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="51dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="375dp"
+                    android:layout_marginBottom="9dp"
+                    android:fontFamily="@font/arisb"
+                    android:gravity="center"
+                    android:justificationMode="inter_word"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text="Created by: Lean Cristine Bugay and Tomas Emmanuel Albero"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </FrameLayout>
+
+            <android.widget.Button
+                android:id="@+id/btnBack"
+                android:layout_width="515dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button5"
+                android:fontFamily="@font/arisb"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:letterSpacing=".1"
+                android:text="Back"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

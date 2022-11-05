@@ -7,16 +7,16 @@
     android:elevation="3dp"
     android:background="@color/Toolbar">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
         <ImageView
             android:layout_width="76dp"
-            android:layout_height="45dp"
+            android:layout_height="245dp"
             android:src="@drawable/logo"
             tools:layout_editor_absoluteX="-2dp"
             tools:layout_editor_absoluteY="1dp" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
 </androidx.appcompat.widget.Toolbar>
