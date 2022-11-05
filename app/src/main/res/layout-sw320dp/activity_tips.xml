@@ -34,7 +34,7 @@
                 android:shadowRadius="2"
                 android:text="Tips"
                 android:textColor="@color/title"
-                android:textSize="50sp" />
+                android:textSize="45sp" />
 
             <FrameLayout
                 android:layout_width="350dp"
@@ -54,7 +54,7 @@
                 <TextView
                     android:id="@+id/textTips1"
                     android:layout_width="155dp"
-                    android:layout_height="74dp"
+                    android:layout_height="63dp"
                     android:layout_marginStart="145dp"
                     android:layout_marginBottom="9dp"
                     android:fontFamily="@font/arisb"
@@ -62,9 +62,9 @@
                     android:shadowDx="1"
                     android:shadowDy="1"
                     android:shadowRadius="2"
-                    android:text="Reward yourself on every task you finish in order to be continuously motivated."
+                    android:text="Reward yourself on every task you finish in order to be motivated."
                     android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
             </FrameLayout>
 
@@ -96,7 +96,7 @@
                     android:shadowRadius="2"
                     android:text="Don't forget to take a break. Your body also needs rest to think properly."
                     android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
             </FrameLayout>
 
@@ -128,7 +128,7 @@
                     android:shadowRadius="2"
                     android:text="Start thinking about your short and long term goals in life."
                     android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
             </FrameLayout>
 
@@ -160,13 +160,13 @@
                     android:shadowRadius="2"
                     android:text="Write your plans you got in mind in order not to forget them."
                     android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
             </FrameLayout>
 
             <android.widget.Button
                 android:id="@+id/btnBack"
-                android:layout_width="315dp"
+                android:layout_width="351dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="70dp"
@@ -181,7 +181,7 @@
                 android:text="Back"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
     </ScrollView>

@@ -34,7 +34,7 @@
                 android:shadowRadius="2"
                 android:text="About Us"
                 android:textColor="@color/title"
-                android:textSize="50sp" />
+                android:textSize="45sp" />
 
             <FrameLayout
                 android:layout_width="692dp"
@@ -118,20 +118,20 @@
 
             <android.widget.Button
                 android:id="@+id/btnBack"
-                android:layout_width="515dp"
+                android:layout_width="680dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/button5"
                 android:fontFamily="@font/arisb"
+                android:letterSpacing=".1"
                 android:shadowDx="1"
                 android:shadowDy="1"
                 android:shadowRadius="2"
-                android:letterSpacing=".1"
                 android:text="Back"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
     </ScrollView>

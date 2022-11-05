@@ -34,7 +34,7 @@
                 android:shadowRadius="2"
                 android:text="Timer"
                 android:textColor="@color/title"
-                android:textSize="70sp" />
+                android:textSize="95sp" />
 
             <TextView
                 android:id="@+id/Timer"
@@ -70,7 +70,7 @@
                     android:text="Reset"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
-                    android:textSize="25sp"
+                    android:textSize="40sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/btnStart"
@@ -91,7 +91,7 @@
                     android:text="Start"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
-                    android:textSize="25sp"
+                    android:textSize="40sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/btnReset"
                     app:layout_constraintStart_toStartOf="parent"
@@ -129,11 +129,11 @@
                 android:text="Set"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="25sp" />
+                android:textSize="40sp" />
 
             <android.widget.Button
                 android:id="@+id/btnBack"
-                android:layout_width="370dp"
+                android:layout_width="576dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="260dp"
@@ -148,7 +148,7 @@
                 android:text="Back"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="25sp" />
+                android:textSize="40sp" />
 
         </LinearLayout>
     </ScrollView>

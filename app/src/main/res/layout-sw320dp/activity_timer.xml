@@ -34,7 +34,7 @@
                 android:shadowRadius="2"
                 android:text="Timer"
                 android:textColor="@color/title"
-                android:textSize="40sp" />
+                android:textSize="45sp" />
 
             <TextView
                 android:id="@+id/Timer"
@@ -70,7 +70,7 @@
                     android:text="Reset"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
-                    android:textSize="25sp"
+                    android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/btnStart"
@@ -91,7 +91,7 @@
                     android:text="Start"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
-                    android:textSize="25sp"
+                    android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/btnReset"
                     app:layout_constraintStart_toStartOf="parent"
@@ -128,14 +128,14 @@
                 android:text="Set"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <android.widget.Button
                 android:id="@+id/btnBack"
                 android:layout_width="315dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="180dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/button5"
                 android:fontFamily="@font/arisb"
@@ -147,7 +147,7 @@
                 android:text="Back"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
     </ScrollView>

@@ -39,16 +39,17 @@
                 android:layout_width="wrap_content"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
                 android:layout_below="@id/mplanner"
                 android:layout_centerHorizontal="true"
                 android:background="@drawable/calendarborder" />
 
             <android.widget.Button
                 android:id="@+id/btnBack"
-                android:layout_width="315dp"
+                android:layout_width="346dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="150dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/button5"
                 android:fontFamily="@font/arisb"
@@ -60,7 +61,7 @@
                 android:text="Back"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

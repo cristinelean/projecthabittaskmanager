@@ -33,7 +33,7 @@
                 android:shadowRadius="2"
                 android:text="Welcome"
                 android:textColor="@color/welcome"
-                android:textSize="60sp" />
+                android:textSize="50sp" />
 
             <TextView
                 android:id="@+id/productivity"
@@ -47,7 +47,7 @@
                 android:shadowRadius="2"
                 android:text="Start your day with productivity!"
                 android:textColor="@color/gray"
-                android:textSize="22sp" />
+                android:textSize="20sp" />
 
             <android.widget.Button
                 android:id="@+id/btnNotes"
@@ -132,6 +132,7 @@
                 android:layout_height="80dp"
                 android:layout_gravity="center"
                 android:background="@drawable/button5"
+                android:layout_marginBottom="30dp"
                 android:drawableLeft="@drawable/ic_baseline_info_24"
                 android:fontFamily="@font/arisb"
                 android:paddingLeft="20dp"

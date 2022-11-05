@@ -25,7 +25,7 @@
                 android:layout_width="325dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="200dp"
                 android:layout_marginBottom="-10dp"
                 android:fontFamily="@font/mont"
                 android:gravity="center"
@@ -34,10 +34,10 @@
                 android:shadowRadius="2"
                 android:text="Tips"
                 android:textColor="@color/title"
-                android:textSize="80sp" />
+                android:textSize="95sp" />
 
             <FrameLayout
-                android:layout_width="638dp"
+                android:layout_width="827dp"
                 android:layout_height="195dp"
                 android:layout_gravity="center"
                 android:layout_margin="12dp"
@@ -53,7 +53,7 @@
 
                 <TextView
                     android:id="@+id/textTips1"
-                    android:layout_width="374dp"
+                    android:layout_width="553dp"
                     android:layout_height="143dp"
                     android:layout_marginStart="220dp"
                     android:layout_marginBottom="9dp"
@@ -69,8 +69,8 @@
             </FrameLayout>
 
             <FrameLayout
-                android:layout_width="638dp"
-                android:layout_height="216dp"
+                android:layout_width="827dp"
+                android:layout_height="195dp"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
                 android:background="@drawable/frame"
@@ -85,7 +85,7 @@
 
                 <TextView
                     android:id="@+id/textTips2"
-                    android:layout_width="364dp"
+                    android:layout_width="562dp"
                     android:layout_height="164dp"
                     android:layout_marginStart="220dp"
                     android:layout_marginBottom="9dp"
@@ -101,8 +101,8 @@
             </FrameLayout>
 
             <FrameLayout
-                android:layout_width="638dp"
-                android:layout_height="212dp"
+                android:layout_width="827dp"
+                android:layout_height="195dp"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:background="@drawable/frame"
@@ -117,8 +117,8 @@
 
                 <TextView
                     android:id="@+id/textTips3"
-                    android:layout_width="360dp"
-                    android:layout_height="153dp"
+                    android:layout_width="558dp"
+                    android:layout_height="166dp"
                     android:layout_marginStart="220dp"
                     android:layout_marginBottom="9dp"
                     android:fontFamily="@font/arisb"
@@ -133,8 +133,8 @@
             </FrameLayout>
 
             <FrameLayout
-                android:layout_width="638dp"
-                android:layout_height="198dp"
+                android:layout_width="827dp"
+                android:layout_height="195dp"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
                 android:background="@drawable/frame"
@@ -149,7 +149,7 @@
 
                 <TextView
                     android:id="@+id/textTips4"
-                    android:layout_width="348dp"
+                    android:layout_width="553dp"
                     android:layout_height="136dp"
                     android:layout_marginStart="220dp"
                     android:layout_marginBottom="9dp"
@@ -166,11 +166,11 @@
 
             <android.widget.Button
                 android:id="@+id/btnBack"
-                android:layout_width="567dp"
+                android:layout_width="813dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="50dp"
                 android:background="@drawable/button5"
                 android:fontFamily="@font/arisb"
                 android:paddingLeft="20dp"
@@ -181,7 +181,7 @@
                 android:text="Back"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="50sp" />
+                android:textSize="40sp" />
 
         </LinearLayout>
     </ScrollView>

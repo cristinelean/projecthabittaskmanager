@@ -35,7 +35,7 @@
                 android:shadowRadius="2"
                 android:text="Timer"
                 android:textColor="@color/title"
-                android:textSize="70sp" />
+                android:textSize="95sp" />
 
             <TextView
                 android:id="@+id/Timer"
@@ -51,7 +51,7 @@
                 android:shadowRadius="2"
                 android:text="00:00"
                 android:textColor="@color/paleBlack"
-                android:textSize="70sp" />
+                android:textSize="100sp" />
 
             <android.widget.Button
                 android:id="@+id/btnStart"
@@ -70,14 +70,16 @@
                 android:text="Start"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="25sp" />
+                android:textSize="40sp" />
+
 
             <android.widget.Button
                 android:id="@+id/btnReset"
-                android:layout_below="@id/btnStart"
-                android:layout_marginStart="450dp"
                 android:layout_width="140dp"
                 android:layout_height="100dp"
+                android:layout_below="@id/btnStart"
+                android:layout_marginStart="450dp"
+                android:layout_marginTop="46dp"
                 android:background="@drawable/button6"
                 android:fontFamily="@font/arisb"
                 android:paddingLeft="20dp"
@@ -88,8 +90,7 @@
                 android:text="Reset"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="25sp" />
-
+                android:textSize="40sp" />
 
             <EditText
                 android:id="@+id/edit_text_input"
@@ -97,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@id/btnStart"
                 android:layout_below="@id/Timer"
-                android:layout_marginStart="100dp"
+                android:layout_marginStart="350dp"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 android:gravity="center"
@@ -108,12 +109,13 @@
 
             <android.widget.Button
                 android:id="@+id/button_set"
-                android:layout_below="@id/edit_text_input"
-                android:layout_marginStart="110dp"
-                android:layout_toEndOf="@id/btnReset"
                 android:layout_width="140dp"
                 android:layout_height="100dp"
+                android:layout_below="@id/edit_text_input"
                 android:layout_gravity="center"
+                android:layout_marginStart="421dp"
+                android:layout_marginTop="84dp"
+                android:layout_toEndOf="@id/btnReset"
                 android:background="@drawable/button6"
                 android:fontFamily="@font/arisb"
                 android:paddingLeft="20dp"
@@ -124,13 +126,13 @@
                 android:text="Set"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="25sp" />
+                android:textSize="40sp" />
 
             <android.widget.Button
                 android:id="@+id/btnBack"
+                android:layout_width="805dp"
+                android:layout_height="97dp"
                 android:layout_below="@id/btnReset"
-                android:layout_width="670dp"
-                android:layout_height="100dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="160dp"
                 android:layout_marginBottom="20dp"
@@ -144,7 +146,7 @@
                 android:text="Back"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="25sp" />
+                android:textSize="40sp" />
 
         </RelativeLayout>
     </ScrollView>

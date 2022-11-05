@@ -32,7 +32,7 @@
                 android:text="My Tasks"
                 android:letterSpacing=".1"
                 android:textColor="@color/title"
-                android:textSize="45sp" />
+                android:textSize="90sp" />
 
             <TextView
                 android:id="@+id/date"
@@ -44,7 +44,7 @@
                 android:text="mm-dd-yy"
                 android:letterSpacing=".1"
                 android:textColor="#545454"
-                android:textSize="30dp"
+                android:textSize="45dp"
                 android:textStyle="bold" />
 
             <EditText
@@ -57,23 +57,23 @@
                 android:autofillHints="Enter Task"
                 android:fontFamily="@font/arisb"
                 android:hint="Enter Task"
-                android:textSize="35sp" />
+                android:textSize="40sp" />
 
             <TextView
                 android:id="@+id/pkatime"
                 android:layout_width="790dp"
-                android:layout_marginStart="160dp"
+                android:layout_marginStart="380dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/Etask"
                 android:layout_marginTop="70dp"
                 android:fontFamily="@font/arisb"
                 android:hint="Pick a time"
-                android:textSize="35sp"/>
+                android:textSize="40sp"/>
 
             <FrameLayout
                 android:id="@+id/frameLayout"
                 android:layout_width="570dp"
-                android:layout_marginStart="480dp"
+                android:layout_marginStart="380dp"
                 android:layout_height="1dp"
                 android:layout_below="@id/pkatime"
                 android:background="@color/black" />
@@ -93,7 +93,7 @@
                 android:shadowDy="1"
                 android:shadowRadius="2"
                 android:text="Set Time"
-                android:textSize="35sp"
+                android:textSize="40sp"
                 android:textAllCaps="false"
                 android:textColor="@color/white" />
 
@@ -112,7 +112,7 @@
                 android:text="Save"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="35sp" />
+                android:textSize="40sp" />
 
             <android.widget.Button
                 android:id="@+id/btnBack"
@@ -130,7 +130,7 @@
                 android:text="Back"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="35sp" />
+                android:textSize="40sp" />
 
         </RelativeLayout>
     </ScrollView>
