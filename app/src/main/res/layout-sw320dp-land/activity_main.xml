@@ -51,7 +51,7 @@
 
             <android.widget.Button
                 android:id="@+id/btnNotes"
-                android:layout_width="815dp"
+                android:layout_width="700dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="40dp"
@@ -71,7 +71,7 @@
 
             <android.widget.Button
                 android:id="@+id/btnPlanner"
-                android:layout_width="815dp"
+                android:layout_width="700dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="40dp"
@@ -90,7 +90,7 @@
 
             <android.widget.Button
                 android:id="@+id/btnTimer"
-                android:layout_width="815dp"
+                android:layout_width="700dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="40dp"
@@ -109,7 +109,7 @@
 
             <android.widget.Button
                 android:id="@+id/btnTips"
-                android:layout_width="815dp"
+                android:layout_width="700dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="40dp"
@@ -128,7 +128,7 @@
 
             <android.widget.Button
                 android:id="@+id/btnAboutUs"
-                android:layout_width="815dp"
+                android:layout_width="700dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center"
                 android:background="@drawable/button5"
