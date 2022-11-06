@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -24,7 +24,7 @@
                 android:id="@+id/timer"
                 android:layout_width="325dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="100dp"
                 android:layout_marginBottom="1dp"
                 android:fontFamily="@font/mont"
@@ -34,15 +34,16 @@
                 android:shadowRadius="2"
                 android:text="Timer"
                 android:textColor="@color/title"
-                android:textSize="45sp" />
+                android:textSize="40sp" />
 
             <TextView
                 android:id="@+id/Timer"
+                android:layout_below="@id/timer"
                 android:layout_width="325dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="55dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="30dp"
                 android:fontFamily="@font/mont"
                 android:gravity="center"
                 android:shadowDx="1"
@@ -50,63 +51,49 @@
                 android:shadowRadius="2"
                 android:text="00:00"
                 android:textColor="@color/paleBlack"
-                android:textSize="100sp" />
+                android:textSize="80sp" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+            <android.widget.Button
+                android:id="@+id/btnStart"
+                android:layout_below="@id/Timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button6"
+                android:fontFamily="@font/arisb"
+                android:layout_marginStart="100dp"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="Start"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
 
-                <android.widget.Button
-                    android:id="@+id/btnReset"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/button6"
-                    android:fontFamily="@font/arisb"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
-                    android:shadowDx="1"
-                    android:shadowDy="1"
-                    android:shadowRadius="2"
-                    android:text="Reset"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/btnStart"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0" />
-
-                <android.widget.Button
-                    android:id="@+id/btnStart"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/button6"
-                    android:fontFamily="@font/arisb"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
-                    android:shadowDx="1"
-                    android:shadowDy="1"
-                    android:shadowRadius="2"
-                    android:text="Start"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/btnReset"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            <android.widget.Button
+                android:id="@+id/btnReset"
+                android:layout_below="@id/Timer"
+                android:layout_toEndOf="@id/btnStart"
+                android:layout_marginStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button6"
+                android:fontFamily="@font/arisb"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="Reset"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
 
 
             <EditText
                 android:id="@+id/edit_text_input"
+                android:layout_below="@id/btnStart"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/text_view_countdown"
                 android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
                 android:layout_marginTop="80dp"
                 android:gravity="center"
                 android:hint="Minutes"
@@ -115,27 +102,27 @@
 
             <android.widget.Button
                 android:id="@+id/button_set"
+                android:layout_below="@id/edit_text_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
                 android:background="@drawable/button6"
                 android:fontFamily="@font/arisb"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
                 android:shadowDx="1"
                 android:shadowDy="1"
                 android:shadowRadius="2"
                 android:text="Set"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:textSize="25sp" />
 
             <android.widget.Button
                 android:id="@+id/btnBack"
+                android:layout_below="@id/button_set"
                 android:layout_width="315dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="180dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="240dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/button5"
                 android:fontFamily="@font/arisb"
@@ -147,8 +134,7 @@
                 android:text="Back"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
-
-        </LinearLayout>
+                android:textSize="25sp" />
+        </RelativeLayout>
     </ScrollView>
 </RelativeLayout>

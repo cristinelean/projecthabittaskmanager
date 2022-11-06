@@ -65,10 +65,10 @@
 
                 <android.widget.Button
                     android:id="@+id/btnSaveTask"
-                    android:layout_width="339dp"
+                    android:layout_width="315dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="70dp"
+                    android:layout_marginTop="55dp"
                     android:background="@drawable/button5"
                     android:fontFamily="@font/arisb"
                     android:letterSpacing=".1"
@@ -82,7 +82,7 @@
 
                     <android.widget.Button
                         android:id="@+id/btnBack"
-                        android:layout_width="339dp"
+                        android:layout_width="315dp"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/btnSaveTask"
                         android:layout_marginTop="10dp"

@@ -61,8 +61,8 @@
 
             <TextView
                 android:id="@+id/pkatime"
-                android:layout_width="200dp"
-                android:layout_marginStart="106dp"
+                android:layout_width="560dp"
+                android:layout_marginStart="80dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/Etask"
                 android:layout_marginTop="70dp"
@@ -72,8 +72,8 @@
 
             <FrameLayout
                 android:id="@+id/frameLayout"
-                android:layout_width="550dp"
-                android:layout_marginStart="106dp"
+                android:layout_width="560dp"
+                android:layout_marginStart="80dp"
                 android:layout_height="1dp"
                 android:layout_below="@id/pkatime"
                 android:background="@color/black" />
@@ -83,7 +83,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/Etask"
-                android:layout_marginStart="362dp"
                 android:layout_marginTop="67dp"
                 android:layout_toEndOf="@id/pkatime"
                 android:background="@drawable/button5"
@@ -104,7 +103,7 @@
                 android:layout_height="89dp"
                 android:layout_below="@id/pkatime"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="800dp"
+                android:layout_marginTop="440dp"
                 android:background="@drawable/button5"
                 android:fontFamily="@font/arisb"
                 android:shadowDx="1"

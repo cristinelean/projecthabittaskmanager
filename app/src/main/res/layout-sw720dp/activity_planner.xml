@@ -42,7 +42,7 @@
                 android:layout_below="@id/mplanner"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
-                android:layout_marginTop="200sp"
+                android:layout_marginTop="180sp"
                 android:alwaysDrawnWithCache="false"
                 android:animateLayoutChanges="true"
                 android:background="@drawable/calendarborder" />
@@ -52,7 +52,7 @@
                 android:layout_width="735dp"
                 android:layout_height="90dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="550dp"
+                android:layout_marginTop="150dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/button5"
                 android:fontFamily="@font/arisb"
