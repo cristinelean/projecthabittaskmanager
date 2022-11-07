@@ -43,7 +43,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/myTask"
                     android:layout_gravity="center"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginTop="30dp"
                     android:fontFamily="@font/arisb"
                     android:hint="Enter Title"
                     android:letterSpacing=".1"

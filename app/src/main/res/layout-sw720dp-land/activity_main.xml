@@ -5,12 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@drawable/bg1"
     tools:context=".MainActivity">
 
     <include
         layout="@layout/toolbar"
         android:id="@+id/toolbar"/>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -22,43 +23,46 @@
 
             <TextView
                 android:id="@+id/welcome"
-                android:layout_width="327dp"
+                android:layout_width="660dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="200dp"
                 android:fontFamily="@font/mont"
                 android:gravity="center"
+                android:letterSpacing=".2"
                 android:shadowDx="1"
                 android:shadowDy="1"
                 android:shadowRadius="2"
                 android:text="Welcome"
                 android:textColor="@color/welcome"
-                android:textSize="50sp" />
+                android:textSize="100sp" />
 
             <TextView
                 android:id="@+id/productivity"
-                android:layout_width="400dp"
+                android:layout_width="745dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/arisb"
                 android:gravity="center"
+                android:letterSpacing=".2"
                 android:shadowDx="1"
                 android:shadowDy="1"
                 android:shadowRadius="2"
                 android:text="Start your day with productivity!"
                 android:textColor="@color/gray"
-                android:textSize="20sp" />
+                android:textSize="35sp" />
 
             <android.widget.Button
                 android:id="@+id/btnNotes"
-                android:layout_width="315dp"
-                android:layout_height="62dp"
+                android:layout_width="662dp"
+                android:layout_height="142dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="40dp"
-                android:layout_marginBottom="25dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="60dp"
                 android:background="@drawable/button1"
-                android:drawableStart="@drawable/ic_baseline_border_color_24"
+                android:drawableStart="@drawable/ic_baseline_border_color_24_big"
                 android:fontFamily="@font/arisb"
+                android:letterSpacing=".2"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
                 android:shadowDx="1"
@@ -67,17 +71,18 @@
                 android:text="Notes"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:textSize="40sp" />
 
             <android.widget.Button
                 android:id="@+id/btnPlanner"
-                android:layout_width="315dp"
-                android:layout_height="65dp"
+                android:layout_width="662dp"
+                android:layout_height="142dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="25dp"
+                android:layout_marginBottom="60dp"
                 android:background="@drawable/button2"
-                android:drawableLeft="@drawable/ic_baseline_calendar_month_24"
+                android:drawableLeft="@drawable/ic_baseline_calendar_month_24_big"
                 android:fontFamily="@font/arisb"
+                android:letterSpacing=".2"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
                 android:shadowDx="1"
@@ -86,17 +91,18 @@
                 android:text="Planner"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:textSize="40sp" />
 
             <android.widget.Button
                 android:id="@+id/btnTimer"
-                android:layout_width="315dp"
-                android:layout_height="65dp"
+                android:layout_width="662dp"
+                android:layout_height="142dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="25dp"
+                android:layout_marginBottom="60dp"
                 android:background="@drawable/button3"
-                android:drawableLeft="@drawable/ic_baseline_timer_24"
+                android:drawableLeft="@drawable/ic_baseline_timer_24_big"
                 android:fontFamily="@font/arisb"
+                android:letterSpacing=".2"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
                 android:shadowDx="1"
@@ -105,17 +111,18 @@
                 android:text="Timer"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:textSize="40sp" />
 
             <android.widget.Button
                 android:id="@+id/btnTips"
-                android:layout_width="315dp"
-                android:layout_height="65dp"
+                android:layout_width="662dp"
+                android:layout_height="142dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="25dp"
+                android:layout_marginBottom="60dp"
                 android:background="@drawable/button4"
-                android:drawableLeft="@drawable/ic_baseline_question_answer_24"
+                android:drawableLeft="@drawable/ic_baseline_question_answer_24_big"
                 android:fontFamily="@font/arisb"
+                android:letterSpacing=".2"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
                 android:shadowDx="1"
@@ -124,17 +131,18 @@
                 android:text="Tips"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:textSize="40sp" />
 
             <android.widget.Button
                 android:id="@+id/btnAboutUs"
-                android:layout_width="315dp"
-                android:layout_height="65dp"
+                android:layout_width="662dp"
+                android:layout_height="142dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="40dp"
+                android:layout_marginBottom="60dp"
                 android:background="@drawable/button5"
-                android:drawableLeft="@drawable/ic_baseline_info_24"
+                android:drawableLeft="@drawable/ic_baseline_info_24_big"
                 android:fontFamily="@font/arisb"
+                android:letterSpacing=".2"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
                 android:shadowDx="1"
@@ -143,7 +151,7 @@
                 android:text="About Us"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:textSize="40sp" />
 
         </LinearLayout>
     </ScrollView>

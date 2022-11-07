@@ -52,7 +52,7 @@
                 <EditText
                     android:id="@+id/dec"
                     android:layout_width="745dp"
-                    android:layout_height="599dp"
+                    android:layout_height="707dp"
                     android:layout_below="@id/Etitle"
                     android:layout_gravity="center"
                     android:layout_marginTop="30dp"

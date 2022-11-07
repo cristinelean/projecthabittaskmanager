@@ -37,7 +37,7 @@
                 android:textSize="45sp" />
 
             <FrameLayout
-                android:layout_width="692dp"
+                android:layout_width="500dp"
                 android:layout_height="476dp"
                 android:layout_gravity="center"
                 android:layout_margin="40dp"
@@ -67,7 +67,7 @@
 
                 <TextView
                     android:id="@+id/textStory2"
-                    android:layout_width="585dp"
+                    android:layout_width="434dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="230dp"
@@ -83,7 +83,7 @@
 
                 <TextView
                     android:id="@+id/textStory3"
-                    android:layout_width="585dp"
+                    android:layout_width="437dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="310dp"
@@ -99,7 +99,7 @@
 
                 <TextView
                     android:id="@+id/textStory4"
-                    android:layout_width="wrap_content"
+                    android:layout_width="389dp"
                     android:layout_height="51dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="375dp"
@@ -118,7 +118,7 @@
 
             <android.widget.Button
                 android:id="@+id/btnBack"
-                android:layout_width="680dp"
+                android:layout_width="495dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="20dp"

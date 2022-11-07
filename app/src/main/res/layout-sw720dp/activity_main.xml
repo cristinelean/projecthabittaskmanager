@@ -54,8 +54,8 @@
 
             <android.widget.Button
                 android:id="@+id/btnNotes"
-                android:layout_width="847dp"
-                android:layout_height="108dp"
+                android:layout_width="662dp"
+                android:layout_height="142dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="100dp"
                 android:layout_marginBottom="60dp"
@@ -75,8 +75,8 @@
 
             <android.widget.Button
                 android:id="@+id/btnPlanner"
-                android:layout_width="847dp"
-                android:layout_height="108dp"
+                android:layout_width="662dp"
+                android:layout_height="142dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="60dp"
                 android:background="@drawable/button2"
@@ -95,8 +95,8 @@
 
             <android.widget.Button
                 android:id="@+id/btnTimer"
-                android:layout_width="847dp"
-                android:layout_height="108dp"
+                android:layout_width="662dp"
+                android:layout_height="142dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="60dp"
                 android:background="@drawable/button3"
@@ -115,8 +115,8 @@
 
             <android.widget.Button
                 android:id="@+id/btnTips"
-                android:layout_width="847dp"
-                android:layout_height="108dp"
+                android:layout_width="662dp"
+                android:layout_height="142dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="60dp"
                 android:background="@drawable/button4"
@@ -135,8 +135,8 @@
 
             <android.widget.Button
                 android:id="@+id/btnAboutUs"
-                android:layout_width="847dp"
-                android:layout_height="108dp"
+                android:layout_width="662dp"
+                android:layout_height="142dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="60dp"
                 android:background="@drawable/button5"

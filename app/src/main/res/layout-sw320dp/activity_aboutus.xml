@@ -38,9 +38,9 @@
 
             <FrameLayout
                 android:layout_width="350dp"
-                android:layout_height="476dp"
+                android:layout_height="464dp"
                 android:layout_gravity="center"
-                android:layout_margin="40dp"
+                android:layout_margin="30dp"
                 android:background="@drawable/frame"
                 android:padding="25dp">
 
@@ -121,7 +121,8 @@
                 android:layout_width="351dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginBottom="20dp"
                 android:background="@drawable/button5"
                 android:fontFamily="@font/arisb"
                 android:letterSpacing=".1"

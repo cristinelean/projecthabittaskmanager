@@ -37,7 +37,7 @@
                 android:textSize="45sp" />
 
             <FrameLayout
-                android:layout_width="699dp"
+                android:layout_width="465dp"
                 android:layout_height="105dp"
                 android:layout_gravity="center"
                 android:layout_margin="12dp"
@@ -53,7 +53,7 @@
 
                 <TextView
                     android:id="@+id/textTips1"
-                    android:layout_width="509dp"
+                    android:layout_width="288dp"
                     android:layout_height="74dp"
                     android:layout_marginStart="145dp"
                     android:layout_marginBottom="9dp"
@@ -64,13 +64,13 @@
                     android:shadowRadius="2"
                     android:text="Reward yourself on every task you finish in order to be continuously motivated."
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    android:textSize="16sp" />
 
             </FrameLayout>
 
             <FrameLayout
-                android:layout_width="699dp"
-                android:layout_height="120dp"
+                android:layout_width="468dp"
+                android:layout_height="105dp"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
                 android:background="@drawable/frame"
@@ -85,7 +85,7 @@
 
                 <TextView
                     android:id="@+id/textTips2"
-                    android:layout_width="507dp"
+                    android:layout_width="288dp"
                     android:layout_height="74dp"
                     android:layout_marginStart="145dp"
                     android:layout_marginBottom="9dp"
@@ -96,13 +96,13 @@
                     android:shadowRadius="2"
                     android:text="Don't forget to take a break. Your body also needs rest to think properly."
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    android:textSize="16sp" />
 
             </FrameLayout>
 
             <FrameLayout
-                android:layout_width="699dp"
-                android:layout_height="120dp"
+                android:layout_width="470dp"
+                android:layout_height="105dp"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:background="@drawable/frame"
@@ -128,13 +128,13 @@
                     android:shadowRadius="2"
                     android:text="Start thinking about your short and long term goals in life."
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    android:textSize="16sp" />
 
             </FrameLayout>
 
             <FrameLayout
-                android:layout_width="699dp"
-                android:layout_height="120dp"
+                android:layout_width="469dp"
+                android:layout_height="105dp"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
                 android:background="@drawable/frame"
@@ -149,7 +149,7 @@
 
                 <TextView
                     android:id="@+id/textTips4"
-                    android:layout_width="505dp"
+                    android:layout_width="284dp"
                     android:layout_height="74dp"
                     android:layout_marginStart="145dp"
                     android:layout_marginBottom="9dp"
@@ -160,13 +160,13 @@
                     android:shadowRadius="2"
                     android:text="Write your plans you got in mind in order not to forget them."
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    android:textSize="16sp" />
 
             </FrameLayout>
 
             <android.widget.Button
                 android:id="@+id/btnBack"
-                android:layout_width="688dp"
+                android:layout_width="487dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"

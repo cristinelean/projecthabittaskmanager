@@ -37,7 +37,7 @@
                 android:textSize="95sp" />
 
             <FrameLayout
-                android:layout_width="827dp"
+                android:layout_width="730dp"
                 android:layout_height="195dp"
                 android:layout_gravity="center"
                 android:layout_margin="12dp"
@@ -53,8 +53,8 @@
 
                 <TextView
                     android:id="@+id/textTips1"
-                    android:layout_width="553dp"
-                    android:layout_height="143dp"
+                    android:layout_width="461dp"
+                    android:layout_height="144dp"
                     android:layout_marginStart="220dp"
                     android:layout_marginBottom="9dp"
                     android:fontFamily="@font/arisb"
@@ -69,7 +69,7 @@
             </FrameLayout>
 
             <FrameLayout
-                android:layout_width="827dp"
+                android:layout_width="734dp"
                 android:layout_height="195dp"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
@@ -85,7 +85,7 @@
 
                 <TextView
                     android:id="@+id/textTips2"
-                    android:layout_width="562dp"
+                    android:layout_width="471dp"
                     android:layout_height="164dp"
                     android:layout_marginStart="220dp"
                     android:layout_marginBottom="9dp"
@@ -101,7 +101,7 @@
             </FrameLayout>
 
             <FrameLayout
-                android:layout_width="827dp"
+                android:layout_width="735dp"
                 android:layout_height="195dp"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
@@ -117,7 +117,7 @@
 
                 <TextView
                     android:id="@+id/textTips3"
-                    android:layout_width="558dp"
+                    android:layout_width="466dp"
                     android:layout_height="166dp"
                     android:layout_marginStart="220dp"
                     android:layout_marginBottom="9dp"
@@ -133,7 +133,7 @@
             </FrameLayout>
 
             <FrameLayout
-                android:layout_width="827dp"
+                android:layout_width="737dp"
                 android:layout_height="195dp"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
@@ -149,7 +149,7 @@
 
                 <TextView
                     android:id="@+id/textTips4"
-                    android:layout_width="553dp"
+                    android:layout_width="471dp"
                     android:layout_height="136dp"
                     android:layout_marginStart="220dp"
                     android:layout_marginBottom="9dp"
@@ -166,7 +166,7 @@
 
             <android.widget.Button
                 android:id="@+id/btnBack"
-                android:layout_width="787dp"
+                android:layout_width="732dp"
                 android:layout_height="89dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="40dp"
