@@ -9,19 +9,10 @@ import android.widget.Button;
 
 public class CreateNotes extends AppCompatActivity {
 
-    private Button back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_notes);
-        back = findViewById(R.id.btnBack);
 
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(CreateNotes.this, NotesActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 }

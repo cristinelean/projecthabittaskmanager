@@ -12,60 +12,15 @@ public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar;
 
-    private Button bNotes,bPlanner,bTimer,bTips,bAboutUs;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         toolbar=findViewById(R.id.toolbar);
-        bNotes=findViewById(R.id.btnNotes);
-        bPlanner=findViewById(R.id.btnPlanner);
-        bTimer=findViewById(R.id.btnTimer);
-        bTips=findViewById(R.id.btnTips);
-        bAboutUs=findViewById(R.id.btnAboutUs);
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(null);
 
-        bNotes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, NotesActivity.class);
-                startActivity(intent);
-            }
-        });
 
-        bPlanner.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, PlannerActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        bTimer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, TimerActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        bTips.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, TipsActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        bAboutUs.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, AboutUsActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 }
