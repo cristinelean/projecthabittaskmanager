@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateTask">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/myTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="132dp"
+                android:fontFamily="@font/mont"
+                android:gravity="center"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="My Tasks"
+                android:letterSpacing=".1"
+                android:textColor="@color/title"
+                android:textSize="90sp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/myTask"
+                android:fontFamily="@font/mont"
+                android:gravity="center"
+                android:text="mm-dd-yy"
+                android:letterSpacing=".1"
+                android:textColor="#545454"
+                android:textSize="45dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Etask"
+                android:layout_width="745dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="120dp"
+                android:autofillHints="Enter Task"
+                android:fontFamily="@font/arisb"
+                android:hint="Enter Task"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/pkatime"
+                android:layout_width="200dp"
+                android:layout_marginStart="106dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Etask"
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/arisb"
+                android:hint="Pick a time"
+                android:textSize="40sp"/>
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="550dp"
+                android:layout_marginStart="106dp"
+                android:layout_height="1dp"
+                android:layout_below="@id/pkatime"
+                android:background="@color/black" />
+
+            <android.widget.Button
+                android:id="@+id/settme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Etask"
+                android:layout_marginStart="362dp"
+                android:layout_marginTop="67dp"
+                android:layout_toEndOf="@id/pkatime"
+                android:background="@drawable/button5"
+                android:fontFamily="@font/arisb"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="Set Time"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+
+            <android.widget.Button
+                android:id="@+id/btnSaveTask"
+                android:layout_width="787dp"
+                android:layout_height="89dp"
+                android:layout_below="@id/pkatime"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="800dp"
+                android:background="@drawable/button5"
+                android:fontFamily="@font/arisb"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+
+            <android.widget.Button
+                android:id="@+id/btnBack"
+                android:layout_width="787dp"
+                android:layout_height="89dp"
+                android:layout_below="@id/btnSaveTask"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button5"
+                android:fontFamily="@font/arisb"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="Back"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
