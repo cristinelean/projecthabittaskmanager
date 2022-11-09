@@ -143,7 +143,7 @@ public class CreateNotes extends AppCompatActivity {
             public void onClick(View view) {
                 String a = eTitle.getText().toString();
                 String b = eDesc.getText().toString();
-                String data = a+" "+b;
+                String data = a +" "+b;
 
                 FileOutputStream fos = null;
                 File folder = getExternalCacheDir();;
