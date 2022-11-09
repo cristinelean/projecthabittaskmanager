@@ -6,12 +6,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -87,6 +89,36 @@ public class CreateNotes extends AppCompatActivity {
                 Toast.makeText(CreateNotes.this, "Data Saved to Internal Storage", Toast.LENGTH_SHORT).show();
             }
         });
+
+        Bsavees.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String a = eTitle.getText().toString();
+                String b = eDesc.getText().toString();
+                String data = a+" "+b;
+
+                FileOutputStream fos = null;
+            try {
+                File folder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS);
+                File file = new File(folder, "Notes2.txt");
+                fos = new FileOutputStream(file);
+                fos.write(data.getBytes());
+                } catch (FileNotFoundException e) {
+                e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }finally{
+                    try{
+                        fos.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+                Toast.makeText(CreateNotes.this, "Data Saved to External Storage", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
         loadData();
     }
 
