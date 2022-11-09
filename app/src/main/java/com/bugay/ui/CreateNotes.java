@@ -23,7 +23,7 @@ public class CreateNotes extends AppCompatActivity {
 
     TextView Notes;
     EditText eTitle, eDesc;
-    Button Bshared, Bapply, Bsaveis, Bsavees, Bsaveic, Bsaveec;
+    Button Bapply, Bsaveis, Bsavees, Bsaveic, Bsaveec;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,6 @@ public class CreateNotes extends AppCompatActivity {
         Notes = findViewById(R.id.myNotes);
         eTitle = findViewById(R.id.Etitle);
         eDesc = findViewById(R.id.dec);
-        Bshared = findViewById(R.id.shButton);
         Bapply = findViewById(R.id.saButton);
         Bsaveis = findViewById(R.id.SaveIs);
         Bsavees = findViewById(R.id.SaveEs);
@@ -46,15 +45,6 @@ public class CreateNotes extends AppCompatActivity {
                 String b = eDesc.getText().toString();
                 String data = a+" "+b;
                 Notes.setText(data);
-            }
-        });
-
-        Bshared.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String a = eTitle.getText().toString();
-                String b = eDesc.getText().toString();
-                String data = a+" "+b;
 
                 SharedPreferences sharedPreferences = getSharedPreferences("shared", MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -64,6 +54,7 @@ public class CreateNotes extends AppCompatActivity {
                 Toast.makeText(CreateNotes.this, "Data Saved", Toast.LENGTH_SHORT).show();
             }
         });
+
         Bsaveis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -118,6 +109,62 @@ public class CreateNotes extends AppCompatActivity {
             }
         });
 
+        Bsaveic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String a = eTitle.getText().toString();
+                String b = eDesc.getText().toString();
+                String data = a+" "+b;
+
+                FileOutputStream fos = null;
+
+                File folder = getCacheDir();
+                File file = new File(folder, "Notes3.txt");
+                try {
+                    fos = new FileOutputStream(file);
+                    fos.write(data.getBytes());
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }finally {
+                    try{
+                        fos.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+                Toast.makeText(CreateNotes.this, "Data Saved to Cache Internal Storage", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        Bsaveec.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String a = eTitle.getText().toString();
+                String b = eDesc.getText().toString();
+                String data = a+" "+b;
+
+                FileOutputStream fos = null;
+                File folder = getExternalCacheDir();;
+                File file = new File(folder, "Notes4.txt");
+                try {
+                    fos = new FileOutputStream(file);
+                    fos.write(data.getBytes());
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }finally {
+                    try{
+                        fos.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+                Toast.makeText(CreateNotes.this, "Data Saved to Cache External Storage", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         loadData();
     }
