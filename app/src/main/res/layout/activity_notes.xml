@@ -33,52 +33,55 @@
             android:textColor="@color/title"
             android:textSize="40sp" />
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recviewNote"
+            android:layout_width="match_parent"
+            android:layout_height="404dp"
+            android:layout_marginTop="10dp" />
 
 
-        <android.widget.Button
-            android:id="@+id/btncnotes"
-            android:layout_width="315dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="48dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginTop="450dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/button5"
-            android:fontFamily="@font/arisb"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:shadowDx="1"
-            android:shadowDy="1"
-            android:shadowRadius="2"
-            android:text="Add notes"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="25sp" />
-
-        <android.widget.Button
-            android:id="@+id/btt"
-            android:layout_width="315dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="48dp"
-            android:layout_marginTop="-10dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/button5"
-            android:fontFamily="@font/arisb"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:shadowDx="1"
-            android:shadowDy="1"
-            android:shadowRadius="2"
-            android:text="Back"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="25sp" />
 
     </LinearLayout>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recviewNote"
-        android:layout_marginTop="150dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+    <android.widget.Button
+        android:id="@+id/btncnotes"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button5"
+        android:fontFamily="@font/arisb"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="Add notes"
+        android:letterSpacing=".1"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <android.widget.Button
+        android:id="@+id/btt"
+        android:layout_width="315dp"
+        android:layout_below="@id/btncnotes"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button5"
+        android:fontFamily="@font/arisb"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="Back"
+        android:letterSpacing=".1"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
 </RelativeLayout>

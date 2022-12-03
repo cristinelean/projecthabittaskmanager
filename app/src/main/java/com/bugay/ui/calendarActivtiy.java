@@ -36,9 +36,9 @@ public class calendarActivtiy extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar_activtiy);
-        mclndr = (TextView) findViewById(R.id.calendar);
-        mbtn = (Button) findViewById(R.id.button1);
-        btc = (Button) findViewById(R.id.btc);
+        mclndr = (TextView) findViewById(R.id.date);
+        mbtn = (Button) findViewById(R.id.btnAddTask);
+        btc = (Button) findViewById(R.id.btnBack);
         RV = findViewById(R.id.recview);
         RV.setHasFixedSize(true);
         RV.setLayoutManager(new LinearLayoutManager(this));
@@ -85,6 +85,11 @@ public class calendarActivtiy extends AppCompatActivity {
                     list.add(model);
                 }
                 adptr.notifyDataSetChanged();
+                /*//To check if the list in empty state
+                if (!(list.size() == 0)){
+                    check.setVisibility(View.GONE);
+                    *//* Toast.makeText(calendarActivtiy.this, "message " +list.size(), Toast.LENGTH_SHORT).show();*//*
+                }*/
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override

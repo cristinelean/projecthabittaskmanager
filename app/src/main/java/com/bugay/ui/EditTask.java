@@ -3,6 +3,8 @@ package com.bugay.ui;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,6 +25,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 public class EditTask extends AppCompatActivity implements TimePickerDialog.OnTimeSetListener {
 
     private EditText crttsk;
+    private TextView count;
     private TextView ddate, mtime;
     private Button savem;
     private Button button, btt;
@@ -36,12 +39,33 @@ public class EditTask extends AppCompatActivity implements TimePickerDialog.OnTi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_task);
 
-        crttsk = findViewById(R.id.task);
-        mtime = findViewById(R.id.textView);
-        ddate = findViewById(R.id.crntdate);
-        savem = findViewById(R.id.stask);
-        button = (Button) findViewById(R.id.button);
-        btt = findViewById(R.id.btt);
+        count = findViewById(R.id.number);
+        crttsk = findViewById(R.id.Etask);
+        mtime = findViewById(R.id.pkatime);
+        ddate = findViewById(R.id.date);
+        savem = findViewById(R.id.btnSaveTask);
+        button = (Button) findViewById(R.id.settme);
+        btt = findViewById(R.id.btnBack);
+
+        //count characters
+        crttsk.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                String a = crttsk.getText().toString();
+                int b = a.length();
+                count.setText(""+(int)b);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
 
         bundle = getIntent().getExtras();
         if (bundle != null){
@@ -149,7 +173,7 @@ public class EditTask extends AppCompatActivity implements TimePickerDialog.OnTi
 
     @Override
     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-        TextView textView = (TextView) findViewById(R.id.textView);
+        TextView textView = (TextView) findViewById(R.id.pkatime);
         textView.setText( hourOfDay + " : " + minute);
     }
 

@@ -2,9 +2,12 @@ package com.bugay.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -21,6 +24,7 @@ import java.util.UUID;
 public class CreateNotes extends AppCompatActivity {
 
     private EditText txtTitle, txtDesc;
+    private TextView count;
     private Button btnsave, btnback;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private String uid, utitle, udesc;
@@ -30,11 +34,31 @@ public class CreateNotes extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_notes);
 
+        count = findViewById(R.id.number);
         txtTitle=findViewById(R.id.txtTitle);
         txtDesc=findViewById(R.id.txtDesc);
         btnsave=findViewById(R.id.btnsnotes);
-        btnback=findViewById(R.id.btt);
+        btnback=findViewById(R.id.btnBack);
 
+        //count characters
+        txtTitle.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                String a = txtTitle.getText().toString();
+                int b = a.length();
+                count.setText(""+(int)b);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
         Bundle bundle = getIntent().getExtras();
         if(bundle != null){
             btnsave.setText("Update");

@@ -1,41 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".calendarActivtiy">
 
-    <TextView
-        android:id="@+id/calendar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="date"
-        android:textSize="30sp"
-        android:layout_centerHorizontal="true"
-        />
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recview"
-        android:layout_below="@id/calendar"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20dp"/>
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="600dp"
-        android:text="Add task" />
 
-    <Button
-        android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/myTask"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/mont"
+                android:gravity="center"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="My Tasks"
+                android:letterSpacing=".1"
+                android:textColor="@color/title"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/mont"
+                android:text="mm-dd-yy"
+                android:textColor="#545454"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <!--<ImageView
+                android:id="@+id/flag"
+                android:layout_width="239dp"
+                android:layout_height="390dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/flag" />
+
+            <TextView
+                android:id="@+id/noTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-90dp"
+                android:layout_marginBottom="100dp"
+                android:fontFamily="@font/arisb"
+                android:gravity="center"
+                android:text="No Tasks"
+                android:letterSpacing=".1"
+                android:textColor="#545454"
+                android:textSize="35dp"
+                android:textStyle="bold" />-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recview"
+                android:layout_width="match_parent"
+                android:layout_height="404dp"
+                />
+
+
+        </LinearLayout>
+
+    <android.widget.Button
+        android:id="@+id/btnAddTask"
+        android:layout_width="315dp"
         android:layout_height="wrap_content"
-        android:id="@+id/btc"
-        android:layout_below="@id/button1"
+        android:layout_marginTop="610dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button5"
+        android:fontFamily="@font/arisb"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="Add Task"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <android.widget.Button
+        android:id="@+id/btnBack"
+        android:layout_below="@id/btnAddTask"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button5"
+        android:fontFamily="@font/arisb"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
         android:text="Back"
-        />
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
 </RelativeLayout>
