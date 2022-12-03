@@ -70,7 +70,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="100dp"
                 android:autofillHints="Enter Task"
-                android:fontFamily="@font/arisb"
+                android:fontFamily="@font/mont"
                 android:hint="Enter Task"
                 android:textSize="25sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -119,7 +119,7 @@
                 android:layout_below="@id/Etask"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="50dp"
-                android:fontFamily="@font/arisb"
+                android:fontFamily="@font/mont"
                 android:hint="Pick a time"
                 android:textSize="25sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -162,14 +162,14 @@
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="@+id/Etask"
                 app:layout_constraintTop_toBottomOf="@+id/Etask"
-                app:layout_constraintVertical_bias="0.078" />
+                app:layout_constraintVertical_bias="0.121" />
 
             <android.widget.Button
                 android:id="@+id/btnSaveTask"
                 android:layout_width="315dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/pkatime"
-                android:layout_marginTop="300dp"
+                android:layout_marginTop="160dp"
                 android:background="@drawable/button5"
                 android:fontFamily="@font/arisb"
                 android:shadowDx="1"
@@ -191,7 +191,7 @@
                 android:layout_width="315dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/btnSaveTask"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/button5"
                 android:fontFamily="@font/arisb"

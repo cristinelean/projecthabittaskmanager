@@ -84,4 +84,23 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="25sp" />
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="239dp"
+        android:layout_height="238dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:src="@drawable/flag" />
+
+    <TextView
+        android:id="@+id/noTask"
+        android:layout_below="@+id/flag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arisb"
+        android:gravity="center"
+        android:text="No Notes"
+        android:textColor="#545454"
+        android:textSize="35dp"
+        android:textStyle="bold" />
 </RelativeLayout>

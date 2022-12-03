@@ -173,8 +173,88 @@ public class EditTask extends AppCompatActivity implements TimePickerDialog.OnTi
 
     @Override
     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-        TextView textView = (TextView) findViewById(R.id.pkatime);
-        textView.setText( hourOfDay + " : " + minute);
+        int hour = hourOfDay;
+        int min = minute;
+        String day = "";
+        String Thour = "";
+        String minutes = "";
+        // AM or PM
+        if (0<=hour && hour<12){
+            day = "AM";
+        }else{
+            day = "PM";
+        }
+
+        if (hour == 0){
+            Thour = "12";
+        }else if (hour == 1){
+            Thour = "01";
+        }else if (hour == 2){
+            Thour = "02";
+        }else if (hour == 3){
+            Thour = "03";
+        }else if (hour == 4){
+            Thour = "04";
+        }else if (hour == 5){
+            Thour = "05";
+        }else if (hour == 6){
+            Thour = "06";
+        }else if (hour == 7){
+            Thour = "07";
+        }else if (hour == 8){
+            Thour = "08";
+        }else if (hour == 9){
+            Thour = "09";
+        }else if (hour == 13){
+            Thour = "01";
+        }else if (hour == 14){
+            Thour = "02";
+        }else if (hour == 15){
+            Thour = "03";
+        }else if (hour == 16){
+            Thour = "04";
+        }else if (hour == 17){
+            Thour = "05";
+        }else if (hour == 18){
+            Thour = "06";
+        }else if (hour == 19){
+            Thour = "07";
+        }else if (hour == 20){
+            Thour = "08";
+        }else if (hour == 21){
+            Thour = "09";
+        }else if (hour == 22) {
+            Thour = "10";
+        }else if (hour == 23) {
+            Thour = "11";
+        }
+        if (min == 0){
+            minutes = "00";
+        }else if (min == 1){
+            minutes = "01";
+        }else if (min == 2){
+            minutes = "02";
+        }else if (min == 3){
+            minutes = "03";
+        }else if (min == 4){
+            minutes = "04";
+        }else if (min == 5){
+            minutes = "05";
+        }else if (min == 6){
+            minutes = "06";
+        }else if (min == 7){
+            minutes = "07";
+        }else if (min == 8){
+            minutes = "08";
+        }else if (min == 9){
+            minutes = "09";
+        }else{
+            minutes = String.valueOf(min);
+        }
+
+        String time = Thour+ " : " +minutes+ " " + day;
+        TextView timer = findViewById(R.id.pkatime);
+        timer.setText(time);
     }
 
 }

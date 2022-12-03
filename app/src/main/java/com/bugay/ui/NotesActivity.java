@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -24,6 +26,8 @@ import java.util.List;
 
 public class NotesActivity extends AppCompatActivity {
 
+    private ImageView flag;
+    private TextView notask;
     private Button btnbk, btnCreateNotes;
     private RecyclerView recyclerView;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -33,6 +37,8 @@ public class NotesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notes);
+        flag = findViewById(R.id.flag);
+        notask = findViewById(R.id.noTask);
         btnCreateNotes = findViewById(R.id.btncnotes);
         btnbk = findViewById(R.id.btt);
         recyclerView = findViewById(R.id.recviewNote);
@@ -74,6 +80,11 @@ public class NotesActivity extends AppCompatActivity {
                     noteList.add(modelNote);
                 }
                 adapterNotes.notifyDataSetChanged();
+                //To check if the list in empty state
+                if (!(noteList.size() == 0)){
+                    flag.setVisibility(View.GONE);
+                    notask.setVisibility(View.GONE);
+                }
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override

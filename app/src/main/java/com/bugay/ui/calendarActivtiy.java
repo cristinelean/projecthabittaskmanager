@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,11 +32,15 @@ public class calendarActivtiy extends AppCompatActivity {
     private RecyclerView RV;
     private Adapter adptr;
     private List<Model> list = new ArrayList<>();
+    private ImageView flag;
+    private TextView notask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar_activtiy);
+        flag = findViewById(R.id.flag);
+        notask = findViewById(R.id.noTask);
         mclndr = (TextView) findViewById(R.id.date);
         mbtn = (Button) findViewById(R.id.btnAddTask);
         btc = (Button) findViewById(R.id.btnBack);
@@ -85,11 +90,11 @@ public class calendarActivtiy extends AppCompatActivity {
                     list.add(model);
                 }
                 adptr.notifyDataSetChanged();
-                /*//To check if the list in empty state
+                //To check if the list in empty state
                 if (!(list.size() == 0)){
-                    check.setVisibility(View.GONE);
-                    *//* Toast.makeText(calendarActivtiy.this, "message " +list.size(), Toast.LENGTH_SHORT).show();*//*
-                }*/
+                    flag.setVisibility(View.GONE);
+                    notask.setVisibility(View.GONE);
+                }
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
