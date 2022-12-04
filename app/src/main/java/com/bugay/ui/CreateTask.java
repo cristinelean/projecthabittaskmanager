@@ -194,7 +194,10 @@ public class CreateTask extends AppCompatActivity implements TimePickerDialog.On
                 Thour = "10";
             }else if (hour == 23) {
                 Thour = "11";
+            }else{
+                Thour = String.valueOf(hour);
             }
+
             if (min == 0){
                 minutes = "00";
             }else if (min == 1){
