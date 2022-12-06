@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateNotes">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/myNotes"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="160dp"
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/mont"
+                android:gravity="center"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="Notes"
+                android:letterSpacing=".1"
+                android:textColor="@color/title"
+                android:textSize="80sp" />
+
+            <EditText
+                android:id="@+id/txtTitle"
+                android:layout_width="945dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/myTask"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/arisb"
+                android:hint="Enter Title"
+                android:letterSpacing=".1"
+                android:textSize="32sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="890dp"
+                    android:layout_weight="1"
+                    android:letterSpacing=".1"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text="0"
+                    android:textColor="@color/title"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/staticnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:letterSpacing=".1"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text="/20"
+                    android:textColor="@color/title"
+                    android:textSize="40sp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/dec"
+                android:layout_width="945dp"
+                android:layout_height="478dp"
+                android:layout_below="@id/Etitle"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/arisb"
+                android:gravity="start"
+                android:hint="Enter Text"
+                android:letterSpacing=".1"
+                android:textSize="32sp" />
+
+            <android.widget.Button
+                android:id="@+id/btnsnotes"
+                android:layout_width="945dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button5"
+                android:fontFamily="@font/arisb"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="Save"
+                android:letterSpacing=".1"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="65sp"/>
+
+            <android.widget.Button
+                android:id="@+id/btnBack"
+                android:layout_width="945dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnSaveTask"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button5"
+                android:fontFamily="@font/arisb"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="Back"
+                android:letterSpacing=".1"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="65sp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

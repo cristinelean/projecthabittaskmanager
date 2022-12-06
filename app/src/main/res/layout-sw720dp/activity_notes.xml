@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".calendarActivtiy">
+    tools:context=".NotesActivity">
 
     <include
         layout="@layout/toolbar"
@@ -19,7 +19,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/myTask"
+                android:id="@+id/myNotes"
                 android:layout_width="325dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -34,30 +34,18 @@
                 android:textColor="@color/title"
                 android:textSize="40sp" />
 
-            <TextView
-                android:id="@+id/date"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:fontFamily="@font/mont"
-                android:text="mm-dd-yy"
-                android:textColor="#545454"
-                android:textSize="25sp"
-                android:textStyle="bold" />
-
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recview"
+                android:id="@+id/recviewNote"
                 android:layout_width="match_parent"
-                android:layout_height="404dp"
-                android:layout_gravity="center"
-                />
+                android:layout_height="754dp"
+                android:layout_gravity="center" />
 
             <ImageView
                 android:id="@+id/flag"
-                android:layout_width="239dp"
-                android:layout_height="238dp"
+                android:layout_width="439dp"
+                android:layout_height="438dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="-360dp"
+                android:layout_marginTop="-630dp"
                 android:src="@drawable/flag" />
 
             <TextView
@@ -67,16 +55,16 @@
                 android:fontFamily="@font/arisb"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="No Tasks"
+                android:text="No Notes"
                 android:textColor="#545454"
-                android:textSize="35dp"
+                android:textSize="45dp"
                 android:textStyle="bold" />
 
             <android.widget.Button
-                android:id="@+id/btnAddTask"
-                android:layout_width="315dp"
+                android:id="@+id/btncnotes"
+                android:layout_width="670dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="140dp"
+                android:layout_marginTop="270dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/button5"
@@ -92,8 +80,8 @@
                 android:textSize="25sp" />
 
             <android.widget.Button
-                android:id="@+id/btnBack"
-                android:layout_width="315dp"
+                android:id="@+id/btt"
+                android:layout_width="670dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="-10dp"
