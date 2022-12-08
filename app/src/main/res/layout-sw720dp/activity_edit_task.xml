@@ -39,7 +39,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/myTask"
-                android:fontFamily="@font/mont"
+                android:fontFamily="@font/gla"
                 android:gravity="center"
                 android:text="mm-dd-yy"
                 android:letterSpacing=".1"
@@ -55,7 +55,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="120dp"
                 android:autofillHints="Enter Task"
-                android:fontFamily="@font/arisb"
+                android:fontFamily="@font/gla"
                 android:hint="Enter Task"
                 android:textSize="35sp" />
 
@@ -74,6 +74,7 @@
                 android:shadowDx="1"
                 android:shadowDy="1"
                 android:shadowRadius="2"
+                android:fontFamily="@font/gla"
                 android:text="0"
                 android:textColor="@color/title"
                 android:textSize="20sp"
@@ -97,9 +98,10 @@
                 android:shadowDx="1"
                 android:shadowDy="1"
                 android:shadowRadius="2"
+                android:fontFamily="@font/gla"
                 android:text="/20"
                 android:textColor="@color/title"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="@+id/Etask"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="@+id/Etask"
@@ -112,7 +114,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/Etask"
                 android:layout_marginTop="70dp"
-                android:fontFamily="@font/arisb"
+                android:fontFamily="@font/gla"
                 android:hint="Pick a time"
                 android:textSize="35sp"/>
 
@@ -139,7 +141,7 @@
                 android:shadowDy="1"
                 android:shadowRadius="2"
                 android:text="Set Time"
-                android:textSize="35sp"
+                android:textSize="30sp"
                 android:textAllCaps="false"
                 android:textColor="@color/white" />
 

@@ -61,7 +61,7 @@ public class CreateNotes extends AppCompatActivity {
         });
         Bundle bundle = getIntent().getExtras();
         if(bundle != null){
-            btnsave.setText("Update");
+            /*btnsave.setText("Save");*/
             utitle = bundle.getString("utitle");
             uid = bundle.getString("uid");
             udesc = bundle.getString("udesc");

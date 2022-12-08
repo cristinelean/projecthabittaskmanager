@@ -2,11 +2,10 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="60dp"
+    android:layout_height="80dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:foreground="@drawable/recborder"
     app:cardElevation="8dp"
-
     android:layout_marginTop="5dp"
     android:layout_marginLeft="15dp"
     android:layout_marginRight="15dp">
@@ -15,35 +14,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"/>
-    
-    <CheckBox
-        android:id="@+id/chckbx"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="7dp"
-        />
 
     <TextView
-        android:id="@+id/task_text"
-        android:layout_width="match_parent"
+        android:id="@+id/note_text"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
         android:fontFamily="@font/gla"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:padding="8dp"
         android:text="Task"
         android:textColor="@color/black"
-        android:textSize="20sp" />
+        android:textSize="30sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/gla"
         android:text="Time"
         android:padding="8dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="250dp"
+        android:fontFamily="@font/gla"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="650dp"
         android:id="@+id/time_text"
-        android:textSize="20sp"/>
+        android:textSize="30sp"/>
 
 </androidx.cardview.widget.CardView>

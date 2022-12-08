@@ -69,7 +69,7 @@ public class EditTask extends AppCompatActivity implements TimePickerDialog.OnTi
 
         bundle = getIntent().getExtras();
         if (bundle != null){
-            savem.setText("update");//button lets change it later nalang depende sa prototype
+            savem.setText("Save");//button lets change it later nalang depende sa prototype
             uId = bundle.getString("uId");
             uTask = bundle.getString("uTask");
             uTime = bundle.getString("uTime");

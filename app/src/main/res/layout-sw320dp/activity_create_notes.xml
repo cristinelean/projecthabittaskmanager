@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="50dp"
-                android:fontFamily="@font/mont"
+                android:fontFamily="@font/gla"
                 android:hint="Enter Title"
                 android:maxLength="20"
                 android:letterSpacing=".1"
@@ -64,6 +64,7 @@
                 android:shadowDx="1"
                 android:shadowDy="1"
                 android:shadowRadius="2"
+                    android:fontFamily="@font/gla"
                 android:text="0"
                 android:textColor="@color/title"
                 android:textSize="20sp" />
@@ -77,6 +78,7 @@
                     android:shadowDx="1"
                     android:shadowDy="1"
                     android:shadowRadius="2"
+                    android:fontFamily="@font/gla"
                     android:text="/20"
                     android:textColor="@color/title"
                     android:textSize="20sp" />
@@ -89,7 +91,7 @@
                 android:layout_height="284dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/mont"
+                android:fontFamily="@font/gla"
                 android:gravity="start"
                 android:hint="Enter Text"
                 android:letterSpacing=".1"

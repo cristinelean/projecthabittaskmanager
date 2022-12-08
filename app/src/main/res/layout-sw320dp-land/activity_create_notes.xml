@@ -38,13 +38,13 @@
                 android:textSize="40sp" />
 
             <EditText
-                android:id="@+id/Etitle"
+                android:id="@+id/txtTitle"
                 android:layout_width="545dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/myTask"
                 android:layout_gravity="center"
                 android:layout_marginTop="50dp"
-                android:fontFamily="@font/arisb"
+                android:fontFamily="@font/gla"
                 android:hint="Enter Title"
                 android:letterSpacing=".1"
                 android:textSize="22sp" />
@@ -64,6 +64,7 @@
                     android:shadowDx="1"
                     android:shadowDy="1"
                     android:shadowRadius="2"
+                    android:fontFamily="@font/gla"
                     android:text="0"
                     android:textColor="@color/title"
                     android:textSize="20sp" />
@@ -77,6 +78,7 @@
                     android:shadowDx="1"
                     android:shadowDy="1"
                     android:shadowRadius="2"
+                    android:fontFamily="@font/gla"
                     android:text="/20"
                     android:textColor="@color/title"
                     android:textSize="20sp" />
@@ -84,13 +86,13 @@
             </LinearLayout>
 
             <EditText
-                android:id="@+id/dec"
+                android:id="@+id/txtDesc"
                 android:layout_width="545dp"
                 android:layout_height="278dp"
-                android:layout_below="@id/Etitle"
+                android:layout_below="@id/txtTitle"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/arisb"
+                android:fontFamily="@font/gla"
                 android:gravity="start"
                 android:hint="nter Text"
                 android:letterSpacing=".1"
@@ -99,7 +101,7 @@
 
 
             <android.widget.Button
-                android:id="@+id/btnSaveTask"
+                android:id="@+id/btnsnotes"
                 android:layout_width="545dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
